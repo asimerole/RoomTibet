@@ -54,7 +54,6 @@ ul{
 .navbar-nav{
     list-style: none;
     margin-top: 50px;
-    display: block;
 }
 .navbar__link{
     color: #FDFDFD;
@@ -762,8 +761,9 @@ svg>path{
 
 @media screen and (max-width: 1024px) {
 .nav__form{
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .newsletter{
     flex-direction: column;
@@ -906,6 +906,10 @@ svg>path{
         padding-top: 16px;
     }
 
+    .navbar-nav{
+        display: block;
+    }
+
     .navbar__link {
         text-decoration: underline 1px solid rgba(0,0,0,0)
     }
@@ -945,6 +949,19 @@ svg>path{
     }
     .container-about-text{
         padding: 0;
+        width: auto;
+    }
+    .offer__wrapper{
+        flex-direction: column;
+    }
+    .container-offer-text{
+        width: unset;
+    }
+    .container-offer-photo{
+        padding: 0;
+    }
+    .popular__item {
+        width: 300px;
     }
     .first, .fourth, .second, .third {
         width: 190px;
@@ -968,9 +985,61 @@ svg>path{
 
 }
 
+/* IPhone for example */
 @media(max-width: 767px){
+    .about, .offer, .popular, .blog__sec, .gallery{
+        padding: 0 30px 0 30px;
+    }
     .all-items{
         flex-direction: column;
         align-items: center;
+    }
+
+    .container-offer-photo {
+        width: auto;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .disable_640{
+        display: none;
+    }
+    .disable_1200{
+        display: flex;
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .about__wrapper, .photos__wrapper, .offer__wrapper, .popular__wrapper , .blog__wrapper , .gallery__wrapper{
+        padding: 130px 0 0 30px;
+    }
+    select{
+       width: 300px; 
+    }
+    input{
+        width: 75px;
+    }
+    .nav__form{
+        padding: 20px;
+    }
+    .select-date{
+        width: 300px;
+    }
+    .container__form{
+        width: auto;
+    }
+    .top__photos, .bot__photos{
+        display: grid;
+        gap: 15px;
+    }
+    .container-offer-text{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .blog{
+        flex-direction: column;
     }
 }

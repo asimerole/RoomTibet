@@ -1001,16 +1001,6 @@ svg>path{
 
 }
 
-@media screen and (max-width: 580px) {
-    .disable_580{
-        display: none;
-    }
-    .disable_1200{
-        display: flex;
-        width: 220px;
-    }
-}
-
 @media screen and (max-width: 639px) {
     .about__wrapper, .photos__wrapper, .offer__wrapper, .popular__wrapper , .blog__wrapper , .gallery__wrapper{
         padding: 130px 0 0 30px;
@@ -1031,7 +1021,6 @@ svg>path{
         width: auto;
     }
     .top__photos, .bot__photos{
-        display: grid;
         gap: 15px;
     }
     .container-offer-text{
@@ -1041,5 +1030,19 @@ svg>path{
     }
     .blog{
         flex-direction: column;
+    }
+
+    .disable_640{
+        display: none;
+    }
+    .disable_1200{
+        display: flex;
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .top__photos, .bot__photos{
+        display: grid;
     }
 }

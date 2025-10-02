@@ -52,7 +52,9 @@ ul{
   gap: 31px;
 }
 .navbar-nav{
-    list-style: none
+    list-style: none;
+    margin-top: 50px;
+    display: block;
 }
 .navbar__link{
     color: #FDFDFD;
@@ -400,14 +402,15 @@ label{
     line-height: 18px;
     color: #1a3e3e;
     background: rgba(253,253,253,.4);
-    backdrop-filter: blur(4px)
+    backdrop-filter: blur(4px);
+    margin-right: 10px;
 }
 
 .popular__stars-img {
     margin-right: 7px;
     width: 17px;
     height: 16px;
-    transform: translateY(-1px)
+    transform: translateY(-1px);
 }
 
 .overlay {
@@ -422,7 +425,7 @@ label{
     box-sizing: border-box;
     background: rgba(255,255,255,.2);
     transition: all 2s ease-in-out;
-    backdrop-filter: blur(6px)
+    backdrop-filter: blur(6px);
 }
 
 .overlay__info {
@@ -437,7 +440,7 @@ label{
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    color: #fdfdfd
+    color: #fdfdfd;
 }
 
 .overlay__name {
@@ -445,7 +448,7 @@ label{
     font-weight: 700;
     font-size: 20px;
     line-height: 120%;
-    color: #fdfdfd
+    color: #fdfdfd;
 }
 
 .overlay__name-descr{
@@ -454,7 +457,7 @@ label{
     font-weight: 700;
     line-height: 120%;
     margin-top: 8px;
-    color: #fdfdfd
+    color: #fdfdfd;
 }
 .overlay__price {
     display: flex;
@@ -467,14 +470,14 @@ label{
     font-size: 20px;
     line-height: 24px;
     color: #fdfdfd;
-    background: rgba(255,255,255,.3)
+    background: rgba(255,255,255,.3);
 }
 
 .overlay__descr {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    color: #fdfdfd
+    color: #fdfdfd;
 }
 
 .popular__item:hover .overlay{
@@ -611,7 +614,7 @@ label{
 
 .form{
     display: table-cell ;
-    vertical-align: middle
+    vertical-align: middle;
 }
 .mail{
     width: 280px;
@@ -759,7 +762,8 @@ svg>path{
 
 @media screen and (max-width: 1024px) {
 .nav__form{
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .newsletter{
     flex-direction: column;
@@ -919,7 +923,7 @@ svg>path{
         -webkit-text-decoration: underline 1px solid #f2be22;
         text-decoration: underline 1px solid #f2be22;
         color: #f2be22;
-        text-underline-offset: 2px
+        text-underline-offset: 2px;
     }
     .dis-scroll {
         position: fixed;
@@ -964,3 +968,9 @@ svg>path{
 
 }
 
+@media(max-width: 767px){
+    .all-items{
+        flex-direction: column;
+        align-items: center;
+    }
+}

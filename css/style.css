@@ -1001,8 +1001,8 @@ svg>path{
 
 }
 
-@media screen and (max-width: 640px) {
-    .disable_640{
+@media screen and (max-width: 580px) {
+    .disable_580{
         display: none;
     }
     .disable_1200{

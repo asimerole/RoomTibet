@@ -15,7 +15,7 @@ body {
 } 
 
 .start{
-    background-image: url("C:/Users/artem/OneDrive/Рабочий стол/exp/RoomTibet/images/bg_header_img.png");
+    background-image: url("../images/bg_header_img.png");
     background-position: top center;
     background-attachment: fixed;
     position: relative;
